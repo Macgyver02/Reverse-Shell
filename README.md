@@ -8,7 +8,6 @@ A fully functional and customizable reverse shell implementation designed for et
 
 ## Table of Contents
 
-
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Getting Started](#getting-started)
